@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Framework.Filters.Smoothing.Frequency.Butterworth">
+    <Position X="9.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\Frequency\Butterworth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.Frequency.Gaussian">
+    <Position X="7.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\Frequency\Gaussian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.Frequency.Ideal">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\Frequency\Ideal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.Gaussian">
+    <Position X="7.25" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABEAA=</HashCode>
+      <FileName>Filters\Smoothing\Gaussian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.Homomorphic">
+    <Position X="27.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQBAAAAAAAAAAAAAAAAADAAA=</HashCode>
+      <FileName>Filters\Smoothing\Homomorphic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.Isef">
+    <Position X="20.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAQAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\Isef.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.Wiener">
+    <Position X="9.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\Wiener.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.Mean.ArithmeticMean">
+    <Position X="14" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\Mean\ArithmeticMean.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.Mean.ContraharmonicMean">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\Mean\ContraharmonicMean.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.Mean.GeometricMean">
+    <Position X="16.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\Mean\GeometricMean.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.Mean.HarmonicMean">
+    <Position X="11.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\Mean\HarmonicMean.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.OrderStatistics.AlphaTrimmedMean">
+    <Position X="2.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\OrderStatistics\AlphaTrimmedMean.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.OrderStatistics.Max">
+    <Position X="27.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\OrderStatistics\Max.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.OrderStatistics.Median">
+    <Position X="14" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\OrderStatistics\Median.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.OrderStatistics.Midpoint">
+    <Position X="23" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\OrderStatistics\Midpoint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.OrderStatistics.Min">
+    <Position X="0.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\OrderStatistics\Min.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.BandPass.Butterworth">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\BandPass\Butterworth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.BandPass.Gaussian">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\BandPass\Gaussian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.BandPass.Ideal">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\BandPass\Ideal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.BandReject.Butterworth">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\BandReject\Butterworth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.BandReject.Gaussian">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\BandReject\Gaussian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.BandReject.Ideal">
+    <Position X="2.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\BandReject\Ideal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.Probabilistic.Canny">
+    <Position X="18.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAQAAAAAAAIAAAQAAAAAABAAA=</HashCode>
+      <FileName>Filters\EdgeDetection\Probabilistic\Canny.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.Probabilistic.ShenCastan">
+    <Position X="9.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABIIAAAAAAAAAAAAAAEAQAAAAAAAAAAAQAAAAAABAAA=</HashCode>
+      <FileName>Filters\EdgeDetection\Probabilistic\ShenCastan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.SndDerivate.Laplacian">
+    <Position X="11.75" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABEAA=</HashCode>
+      <FileName>Filters\EdgeDetection\SndDerivate\Laplacian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.SndDerivate.LaplacianOfGauss">
+    <Position X="20.75" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABEAA=</HashCode>
+      <FileName>Filters\EdgeDetection\SndDerivate\LaplacianOfGauss.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.SndDerivate.MarrHildreth">
+    <Position X="18.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAQAAAAAAAAAAIAAAAAAABAAA=</HashCode>
+      <FileName>Filters\EdgeDetection\SndDerivate\MarrHildreth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.Template.FreiChen">
+    <Position X="20.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\EdgeDetection\Template\FreiChen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.Template.Kirsch">
+    <Position X="2.75" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\EdgeDetection\Template\Kirsch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.Template.Prewitt">
+    <Position X="29.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\EdgeDetection\Template\Prewitt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.Template.Roberts">
+    <Position X="25.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\EdgeDetection\Template\Roberts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.Template.Sobel">
+    <Position X="5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\EdgeDetection\Template\Sobel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Noise.GammaNoise">
+    <Position X="0.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Noise\GammaNoise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Noise.GaussianNoise">
+    <Position X="7.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Noise\GaussianNoise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Noise.NegativeExponentialNoise">
+    <Position X="14" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Noise\NegativeExponentialNoise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Noise.RayleighNoise">
+    <Position X="16.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Noise\RayleighNoise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Noise.SaltPepperNoise">
+    <Position X="5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Noise\SaltPepperNoise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Noise.UniformNoise">
+    <Position X="2.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Noise\UniformNoise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Sharpening.Butterworth">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Sharpening\Butterworth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Sharpening.Gaussian">
+    <Position X="11.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Sharpening\Gaussian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Sharpening.Ideal">
+    <Position X="14" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Sharpening\Ideal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Simple.BipolarThreshold">
+    <Position X="5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Simple\BipolarThreshold.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Simple.Greyscale">
+    <Position X="7.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Simple\Grayscale.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Simple.HighThreshold">
+    <Position X="27.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Simple\HighThreshold.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Simple.Hystersis">
+    <Position X="16.25" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAACABAAA=</HashCode>
+      <FileName>Filters\Simple\Hystersis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Simple.Invert">
+    <Position X="18.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Simple\Invert.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Simple.LowThreshold">
+    <Position X="9.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Simple\LowThreshold.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Simple.NonMaximumSupression">
+    <Position X="23" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Filters\Simple\NonMaximumSupression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Simple.Normalize">
+    <Position X="11.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Simple\Normalize.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Simple.Padding">
+    <Position X="23" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Simple\Padding.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Simple.SkeletonBinary">
+    <Position X="25.25" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAQAAAAAAAAAAAAAEAAAABAAA=</HashCode>
+      <FileName>Filters\Simple\SkeletonBinary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Simple.ThinningBinary">
+    <Position X="25.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAGAAAAAAAAQAAAAAAAAAAAAEAAAAABAAA=</HashCode>
+      <FileName>Filters\Simple\ThinningBinary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Filters.Base.FilterCore">
+    <Position X="17" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Core\Filters\Base\FilterCore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Filters.Frequency.FrequencyDomainFilter&lt;T&gt;">
+    <Position X="12" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Filters\Frequency\FrequencyDomainFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Filters.Spatial.SpatialDomainFilter">
+    <Position X="20" Y="2.5" Width="1.5" />
+    <InheritanceLine Type="Framework.Core.Filters.Base.FilterCore" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="17.812" Y="1.796" />
+        <Point X="17.812" Y="1.875" />
+        <Point X="20.75" Y="1.875" />
+        <Point X="20.75" Y="2.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Filters\Spatial\SpatialDomainFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

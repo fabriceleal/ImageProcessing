@@ -1,0 +1,16 @@
+﻿// Csv schema for filter's results
+
+COLUMNS: filter,parameters,filter-chain,metric1,metric2,...,metric(n)
+
+
+DESCRIPTIONS:
+filter - name of the Filter: Framework.Filters.Smoothing.Mean.ArithmeticMean
+
+parameters - key=value, separated by ;: window size=3; sigma=1
+
+filter-chain - sequence of filters (with parameters in form key = value separated by ; , between {} ) separated by ; :
+Framework.Smoothing.ArithmeticMean{window size=3};Framework.Smoothing.Gaussian{Size=3;Sigma=0.5}
+
+metric1,...,metric(n) - Calculated metrics appear separated by columns; the name of the metric is the 
+name of column; the values are stored in the rows.
+

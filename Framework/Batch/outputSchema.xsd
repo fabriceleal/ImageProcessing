@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="outputSchema"
+    targetNamespace="http://tempuri.org/outputSchema.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/outputSchema.xsd"
+    xmlns:mstns="http://tempuri.org/outputSchema.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+
+  <xs:element name="execution" type="mstns:execution">
+  </xs:element>
+  
+  <!-- TYPES -->
+
+  <xs:complexType name="execution">
+    <xs:sequence>      
+      <xs:element name="filter" type="mstns:filter" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="filter">
+    <xs:sequence>      
+      <xs:element name="name" type="xs:string" />
+      <xs:element name="parameters" type ="mstns:parameters" />
+      <xs:element name="filterchain" type="mstns:stringcollection" />
+      <xs:element name="metrics" type="mstns:metrics" />
+      <xs:element name="durationticks" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="keyvaluepair">
+    <xs:sequence>
+      <xs:element name="key" type="xs:string" />
+      <xs:element name="value" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="parameters">
+    <xs:sequence>
+      <xs:element name="parameter" type="mstns:keyvaluepair" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="metric">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" />
+      <xs:element name="result" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="metrics">
+    <xs:sequence>
+      <xs:element name="metric" type="mstns:metric" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="stringcollection">
+    <xs:sequence>
+      <xs:element name="value" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

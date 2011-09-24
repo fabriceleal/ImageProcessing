@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{63620886-2BF5-4FF9-8837-0FF85830953C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Framework</RootNamespace>
+    <AssemblyName>Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;UNSAFE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;UNSAFE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Framework.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;UNSAFE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Framework.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;UNSAFE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Framework.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;UNSAFE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Framework.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Framework.snk.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Batch\BatchFilter.cs" />
+    <Compile Include="Batch\DocBatch.cs" />
+    <Compile Include="Batch\MetricExec.cs" />
+    <Compile Include="Batch\MetricExecBase.cs" />
+    <Compile Include="Batch\Graph.cs" />
+    <Compile Include="Batch\Node.cs" />
+    <Compile Include="Batch\NodeFilter.cs" />
+    <Compile Include="Batch\Structures.cs" />
+    <Compile Include="Core\CoreDoc.cs" />
+    <Compile Include="Core\Filters\Base\BaseDoc.cs" />
+    <Compile Include="Core\Filters\Base\FilterCore.cs" />
+    <Compile Include="Core\Filters\FiltersDoc.cs" />
+    <Compile Include="Core\Filters\Frequency\Complex.cs" />
+    <Compile Include="Core\Filters\Frequency\ComplexImage.cs" />
+    <Compile Include="Core\Facilities.cs" />
+    <Compile Include="Core\Factory.cs" />
+    <Compile Include="Core\Filters\Base\Filter.cs" />
+    <Compile Include="Core\Filters\Base\FilterAttribute.cs" />
+    <Compile Include="Core\Filters\Frequency\FrequencyDoc.cs" />
+    <Compile Include="Core\Filters\Spatial\SpatialDoc.cs" />
+    <Compile Include="Core\Filters\Spatial\Kernel2D.cs" />
+    <Compile Include="Core\Filters\Spatial\Kernel2DBatch.cs" />
+    <Compile Include="Core\Metrics\AllMetric.cs" />
+    <Compile Include="Core\Metrics\AllMetricAttribute.cs" />
+    <Compile Include="Core\Metrics\MetricsDoc.cs" />
+    <Compile Include="Core\Metrics\MetricAttribute.cs" />
+    <Compile Include="Core\Metrics\MetricMethod.cs" />
+    <Compile Include="Core\Metrics\MetricResult.cs" />
+    <Compile Include="Core\Transforms\TransformsDoc.cs" />
+    <Compile Include="Core\Transforms\TransformCoreBase.cs" />
+    <Compile Include="Core\Metrics\EdgeDetectionMetric.cs" />
+    <Compile Include="Core\Metrics\EdgeDetectionMetricAttribute.cs" />
+    <Compile Include="Core\Metrics\FilterMetricAttribute.cs" />
+    <Compile Include="Core\WeakImage.cs" />
+    <Compile Include="Filters\BandPass\Butterworth.cs" />
+    <Compile Include="Filters\BandPass\Gaussian.cs" />
+    <Compile Include="Filters\BandPass\Ideal.cs" />
+    <Compile Include="Filters\BandReject\Butterworth.cs" />
+    <Compile Include="Filters\BandReject\Gaussian.cs" />
+    <Compile Include="Filters\BandReject\Ideal.cs" />
+    <Compile Include="Filters\FiltersDoc.cs" />
+    <Compile Include="Filters\EdgeDetection\Probabilistic\Canny.cs" />
+    <Compile Include="Filters\EdgeDetection\Probabilistic\ShenCastan.cs" />
+    <Compile Include="Filters\EdgeDetection\SndDerivate\Laplacian.cs" />
+    <Compile Include="Filters\EdgeDetection\SndDerivate\LaplacianOfGauss.cs" />
+    <Compile Include="Filters\EdgeDetection\SndDerivate\MarrHildreth.cs" />
+    <Compile Include="Filters\EdgeDetection\Template\FreiChen.cs" />
+    <Compile Include="Filters\EdgeDetection\Template\Kirsch.cs" />
+    <Compile Include="Filters\EdgeDetection\Template\Prewitt.cs" />
+    <Compile Include="Filters\EdgeDetection\Template\Roberts.cs" />
+    <Compile Include="Filters\EdgeDetection\Template\Sobel.cs" />
+    <Compile Include="Filters\Simple\BipolarThreshold.cs" />
+    <Compile Include="Filters\Simple\Hystersis.cs" />
+    <Compile Include="Filters\Simple\SkeletonBinary.cs" />
+    <Compile Include="Filters\Simple\ThinningBinary.cs" />
+    <Compile Include="Filters\Smoothing\Isef.cs" />
+    <Compile Include="Filters\Noise\GammaNoise.cs" />
+    <Compile Include="Filters\Noise\GaussianNoise.cs" />
+    <Compile Include="Filters\Noise\NegativeExponentialNoise.cs" />
+    <Compile Include="Filters\Noise\RayleighNoise.cs" />
+    <Compile Include="Filters\Noise\SaltPepperNoise.cs" />
+    <Compile Include="Filters\Noise\UniformNoise.cs" />
+    <Compile Include="Filters\Sharpening\Butterworth.cs" />
+    <Compile Include="Filters\Sharpening\Gaussian.cs" />
+    <Compile Include="Filters\Sharpening\Ideal.cs" />
+    <Compile Include="Filters\Simple\HighThreshold.cs" />
+    <Compile Include="Filters\Simple\LowThreshold.cs" />
+    <Compile Include="Filters\Simple\Normalize.cs" />
+    <Compile Include="Filters\Simple\Padding.cs" />
+    <Compile Include="Filters\Smoothing\Frequency\Butterworth.cs" />
+    <Compile Include="Filters\Smoothing\Homomorphic.cs" />
+    <Compile Include="Filters\Smoothing\Mean\ContraharmonicMean.cs" />
+    <Compile Include="Filters\Smoothing\Gaussian.cs" />
+    <Compile Include="Filters\Smoothing\Frequency\Gaussian.cs" />
+    <Compile Include="Filters\Smoothing\Mean\GeometricMean.cs" />
+    <Compile Include="Filters\Smoothing\Mean\HarmonicMean.cs" />
+    <Compile Include="Filters\Smoothing\Frequency\Ideal.cs" />
+    <Compile Include="Filters\Simple\NonMaximumSupression.cs" />
+    <Compile Include="Filters\Smoothing\OrderStatistics\AlphaTrimmedMean.cs" />
+    <Compile Include="Filters\Smoothing\OrderStatistics\Max.cs" />
+    <Compile Include="Filters\Smoothing\OrderStatistics\Median.cs" />
+    <Compile Include="Filters\Smoothing\OrderStatistics\Midpoint.cs" />
+    <Compile Include="Filters\Smoothing\OrderStatistics\Min.cs" />
+    <Compile Include="Filters\Smoothing\Wiener.cs" />
+    <Compile Include="Core\Filters\Frequency\FrequencyDomainFilter.cs" />
+    <Compile Include="Core\Filters\Frequency\FrequencyFilter.cs" />
+    <Compile Include="Core\Filters\Spatial\SpatialDomainFilter.cs" />
+    <Compile Include="Core\Metrics\Metric.cs" />
+    <Compile Include="Core\Metrics\SmoothMetric.cs" />
+    <Compile Include="Core\Metrics\SmoothMetricAttribute.cs" />
+    <Compile Include="Batch\MetricExecReference.cs" />
+    <Compile Include="FrameworkDoc.cs" />
+    <Compile Include="Range\RangeDoc.cs" />
+    <Compile Include="Range\Rangeable.cs" />
+    <Compile Include="Transforms\DiscreteFourierTransform.cs" />
+    <Compile Include="Transforms\FastFourierTransform.cs" />
+    <Compile Include="Transforms\TransformsDoc.cs" />
+    <Compile Include="Transforms\FourierTransform.cs" />
+    <Compile Include="Filters\Simple\Grayscale.cs" />
+    <Compile Include="Filters\Simple\Invert.cs" />
+    <Compile Include="Filters\Smoothing\Mean\ArithmeticMean.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="Batch\Batch_Measures.cd" />
+    <None Include="Batch\Batch.cd" />
+    <EmbeddedResource Include="Batch\outputSchema.xsd">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Batch\Batch_Structs.cd" />
+    <None Include="Core\Core.cd" />
+    <None Include="Core\Filters\Base\Core_Filters_Base.cd" />
+    <None Include="Core\Filters\Core_Filters.cd" />
+    <None Include="Core\Filters\Frequency\Core_Filters_Frequency.cd" />
+    <None Include="Core\Filters\Spatial\Core_Filters_Spatial.cd" />
+    <None Include="Core\Metrics\Core_Metrics.cd" />
+    <None Include="Core\Transforms\Core_Transforms.cd" />
+    <None Include="Filters\BandSharpening.cd" />
+    <None Include="Filters\edgeDetection.cd" />
+    <None Include="Filters\Filters.cd" />
+    <None Include="Filters\noise.cd" />
+    <None Include="Filters\simple.cd" />
+    <None Include="Filters\smoothing.cd" />
+    <None Include="Filters\smoothing2.cd" />
+    <None Include="Filters\smoothing3.cd" />
+    <None Include="Framework.cd" />
+    <None Include="Framework.snk.pfx" />
+    <None Include="Transforms\Transforms.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Batch\outputCsv.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

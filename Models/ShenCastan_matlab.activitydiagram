@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="175ac70f-4c3d-4c7a-87c1-1d2ce9b4d9ba" name="ShenCastan_matlab" linkedPackageId="e544426e-b21e-4345-8fae-18b173e37035" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="6f90482d-29d8-4103-bd2b-2a938d1efeeb">
+      <elementDefinition Id="1fbfd25f-b9ee-4e41-9b18-d410815e9226" />
+      <body>Using integral shen filter... apply convolution</body>
+    </comment>
+    <comment Id="b36a41ab-e0a1-40b1-9ad9-16e877e0404b">
+      <elementDefinition Id="d34af93f-871c-43c4-a992-5af59f80ec4d" />
+      <body>... You can then perform a (hysteresis) threshold to achieve a segmented image (see Canny) ...</body>
+    </comment>
+    <comment Id="5a5b6d36-6c8e-4d7a-9a9e-ab2db09c3980">
+      <elementDefinition Id="1672cc89-a801-47ee-a2db-61fb0a2c0c0d" />
+      <body>Suppress non local maxima</body>
+    </comment>
+    <comment Id="157470d7-cd5d-4d27-bbc3-28871191af5d">
+      <elementDefinition Id="cc822870-3da8-455e-a3b1-ce453f44c0e9" />
+      <body>FONTES:
+shen.m
+.
+.
+.
+</body>
+    </comment>
+    <comment Id="78ee8ca7-c685-48db-b1b6-046533056f47">
+      <elementDefinition Id="e045a081-94bb-432d-9764-d39c3f37393a" />
+      <body>shen.m</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="2e20d59a-2a17-4f5f-9b42-c3d192bfce67" name="ShenCastan_matlab" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="0af2792f-e330-48ed-987e-728dd817073a" />
+        <nodes>
+          <activityFinalNode Id="75fb66f9-9632-4e42-aba4-dfa94a029918" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="51072505-ceb4-4272-afee-e597d301f600" />
+          </activityFinalNode>
+          <initialNode Id="0a7f88e9-a89c-4f9b-b073-76c382e32757" name="Initial1" isLeaf="false">
+            <elementDefinition Id="c09be3d9-ac7c-48ca-987f-338b2c0b2b01" />
+            <flowNodeTargets>
+              <controlFlow Id="ef1ec071-f097-48b3-9483-331d35bd7173" isLeaf="false">
+                <opaqueActionMoniker Id="76af06dd-c77f-4dda-a002-a733e405a0a0" LastKnownName="Image smoothing" />
+                <elementDefinition Id="a2d1ec40-dd0b-4eb1-9e61-5976c24a0a05" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="76af06dd-c77f-4dda-a002-a733e405a0a0" name="Image smoothing" isLeaf="false">
+            <elementDefinition Id="ce743909-5583-49a1-af87-3bfb69c16dab" />
+            <flowNodeTargets>
+              <controlFlow Id="eef5fac5-71fc-44ad-9332-5c27d2278d2d" isLeaf="false">
+                <opaqueActionMoniker Id="b1405c0c-cf07-48ed-8600-872d553efa89" LastKnownName="Edge detection (x and y axis)" />
+                <elementDefinition Id="ab04352e-67ed-48f8-a627-d56fbfbf988a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="b1405c0c-cf07-48ed-8600-872d553efa89" name="Edge detection (x and y axis)" isLeaf="false">
+            <elementDefinition Id="cf4022bd-be52-4b4c-ae8a-76c13c2fbcb0" />
+            <flowNodeTargets>
+              <controlFlow Id="b2058d41-20a9-46e9-a478-58e4fb4be336" isLeaf="false">
+                <opaqueActionMoniker Id="ff2012b7-ce02-4628-beb4-62d3503c9cfa" LastKnownName="(maxl3.m)" />
+                <elementDefinition Id="720ec77d-a721-40d1-9b72-8fc3e65c6c90" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ff2012b7-ce02-4628-beb4-62d3503c9cfa" name="(maxl3.m)" isLeaf="false">
+            <elementDefinition Id="b5c719d2-fbc3-404d-9b07-8bb0f3e177eb" />
+            <flowNodeTargets>
+              <controlFlow Id="1e031f74-73ec-45bf-8e0f-86508b50149c" isLeaf="false">
+                <opaqueActionMoniker Id="e309985d-e89f-4df1-9448-6e55bd56b529" LastKnownName="(hysthresh.m)" />
+                <elementDefinition Id="67d9efd8-1b41-4747-ba46-7a4f184c2aee" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="e309985d-e89f-4df1-9448-6e55bd56b529" name="(hysthresh.m)" isLeaf="false">
+            <elementDefinition Id="e128b073-94c7-43e1-b961-eec420553fbd" />
+            <flowNodeTargets>
+              <controlFlow Id="727624d3-932b-470a-8504-c49eaaccd357" isLeaf="false">
+                <activityFinalNodeMoniker Id="75fb66f9-9632-4e42-aba4-dfa94a029918" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="0e16f0f6-4668-4f1b-85e3-ba581d9cd51b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="e544426e-b21e-4345-8fae-18b173e37035" name="Models">
+    <elementDefinition Id="eb418ddc-a14d-4b32-99ed-78930d016879" />
+    <profileInstances>
+      <packageHasProfileInstances Id="07959899-1eb2-433f-83d8-76757c73dc54">
+        <profileInstance Id="b09143fa-05b6-4f0b-8bf1-93779d7db4e3" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="7f98486f-6835-42b2-9386-f6077d72a3e8">
+        <profileInstance Id="f84b6f0a-2808-47c8-b6c9-85a3837b98f2" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

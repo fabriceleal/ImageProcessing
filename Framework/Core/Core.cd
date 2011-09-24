@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Framework.Core.Filters.Base.FilterCore">
+    <Position X="9.75" Y="8.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Core\Filters\Base\FilterCore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Filters.Base.Filter" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="3.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAACAAAAAAAQAAAAAAACAAAAAABAAAA=</HashCode>
+      <FileName>Core\Filters\Base\Filter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Framework.Core.Filters.Base.FilterAttribute">
+    <Position X="10.5" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAJAAAAAAgQAAEAAIAAAQCAAAEEIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Filters\Base\FilterAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Filters.Frequency.FrequencyDomainFilter&lt;T&gt;">
+    <Position X="12.25" Y="10.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Filters\Frequency\FrequencyDomainFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Filters.Frequency.Complex">
+    <Position X="6.25" Y="10.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAYAUAAAAAAAAAAAAAEAAAAAEgBBA=</HashCode>
+      <FileName>Core\Filters\Frequency\Complex.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Filters.Frequency.ComplexImage">
+    <Position X="3.25" Y="10.25" Width="2.5" />
+    <NestedTypes>
+      <Enum Name="Framework.Core.Filters.Frequency.ComplexImage.ComplexImageBitmapType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\Filters\Frequency\ComplexImage.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAACAAAAEAgAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Core\Filters\Frequency\ComplexImage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Filters.Frequency.FrequencyFilter">
+    <Position X="0.5" Y="10.25" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="Framework.Core.Filters.Frequency.FrequencyFilter.FrequencyFilterEquation">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\Filters\Frequency\FrequencyFilter.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Core\Filters\Frequency\FrequencyFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Filters.Spatial.SpatialDomainFilter">
+    <Position X="9.5" Y="10.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Filters\Spatial\SpatialDomainFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Filters.Spatial.Kernel2D">
+    <Position X="16" Y="3.75" Width="3.25" />
+    <NestedTypes>
+      <Delegate Name="Framework.Core.Filters.Spatial.Kernel2D.ByteKernel2DCallBack" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\Filters\Spatial\Kernel2D.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Framework.Core.Filters.Spatial.Kernel2D.DoubleKernel2DCallBack" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\Filters\Spatial\Kernel2D.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAACAAAAAAQABEAAAgIAIAAEAAACAAABA=</HashCode>
+      <FileName>Core\Filters\Spatial\Kernel2D.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Filters.Spatial.Kernel2DBatch">
+    <Position X="13.25" Y="3.75" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="Framework.Core.Filters.Spatial.Kernel2DBatch.EvaluateKernelDelegate">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\Filters\Spatial\Kernel2DBatch.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Framework.Core.Filters.Spatial.Kernel2DBatch.ReduceDelegate">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\Filters\Spatial\Kernel2DBatch.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Filters\Spatial\Kernel2DBatch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Metrics.AllMetric">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Metrics\AllMetric.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Metrics.AllMetricAttribute">
+    <Position X="3.25" Y="8.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Metrics\AllMetricAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Metrics.EdgeDetectionMetric">
+    <Position X="2.75" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Metrics\EdgeDetectionMetric.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Metrics.EdgeDetectionMetricAttribute">
+    <Position X="6.25" Y="8.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Metrics\EdgeDetectionMetricAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Metrics.FilterMetricAttribute">
+    <Position X="3.25" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Metrics\FilterMetricAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Metrics.Metric">
+    <Position X="1.75" Y="0.5" Width="4" />
+    <NestedTypes>
+      <Delegate Name="Framework.Core.Metrics.Metric.MetricDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\Metrics\Metric.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>QAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Metrics\Metric.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Metrics.MetricAttribute">
+    <Position X="13.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAgAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Metrics\MetricAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Metrics.MetricMethod">
+    <Position X="7.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAABgAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Metrics\MetricMethod.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Metrics.MetricResult">
+    <Position X="10.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Core\Metrics\MetricResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Metrics.SmoothMetric">
+    <Position X="5.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Metrics\SmoothMetric.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Metrics.SmoothMetricAttribute">
+    <Position X="0.5" Y="8.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Metrics\SmoothMetricAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Transforms.TransformCoreBase&lt;DEST&gt;">
+    <Position X="9.5" Y="12.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAECIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Transforms\TransformCoreBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

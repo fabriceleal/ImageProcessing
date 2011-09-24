@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Framework.Filters.Noise.GammaNoise">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Noise\GammaNoise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Noise.GaussianNoise">
+    <Position X="5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Noise\GaussianNoise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Noise.NegativeExponentialNoise">
+    <Position X="9.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Noise\NegativeExponentialNoise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Noise.RayleighNoise">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Noise\RayleighNoise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Noise.SaltPepperNoise">
+    <Position X="7.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Noise\SaltPepperNoise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Noise.UniformNoise">
+    <Position X="11.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Noise\UniformNoise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Filters.Spatial.SpatialDomainFilter" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Filters\Spatial\SpatialDomainFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

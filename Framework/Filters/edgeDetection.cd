@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Framework.Filters.EdgeDetection.Probabilistic.Canny">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAQAAAAAAAIAAAQAAAAAABAAA=</HashCode>
+      <FileName>Filters\EdgeDetection\Probabilistic\Canny.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.Probabilistic.ShenCastan">
+    <Position X="2.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABIIAAAAAAAAAAAAAAEAQAAAAAAAAAAAQAAAAAABAAA=</HashCode>
+      <FileName>Filters\EdgeDetection\Probabilistic\ShenCastan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.SndDerivate.Laplacian">
+    <Position X="18.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABEAA=</HashCode>
+      <FileName>Filters\EdgeDetection\SndDerivate\Laplacian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.SndDerivate.LaplacianOfGauss">
+    <Position X="5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABEAA=</HashCode>
+      <FileName>Filters\EdgeDetection\SndDerivate\LaplacianOfGauss.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.SndDerivate.MarrHildreth">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAQAAAAAAAAAAIAAAAAAABAAA=</HashCode>
+      <FileName>Filters\EdgeDetection\SndDerivate\MarrHildreth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.Template.FreiChen">
+    <Position X="11.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\EdgeDetection\Template\FreiChen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.Template.Kirsch">
+    <Position X="14" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\EdgeDetection\Template\Kirsch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.Template.Prewitt">
+    <Position X="16.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\EdgeDetection\Template\Prewitt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.Template.Roberts">
+    <Position X="20.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\EdgeDetection\Template\Roberts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.Template.Sobel">
+    <Position X="7.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\EdgeDetection\Template\Sobel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Filters.Spatial.SpatialDomainFilter">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Filters\Spatial\SpatialDomainFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

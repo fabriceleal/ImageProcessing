@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{b31fa89b-fb94-41db-b82e-75888e69c86b}</ProjectGuid>
+    <ArchitectureToolsVersion>1.0.0.0</ArchitectureToolsVersion>
+    <Name>Models</Name>
+    <RootNamespace>Models</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
+  <ItemGroup>
+    <Content Include="ShenCastan_matlab.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ShenCastan_matlab.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ShenCastan_matlab.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="UseCaseDiagram.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UseCaseDiagram.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UseCaseDiagram.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="UseCaseDiagram2.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UseCaseDiagram2.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UseCaseDiagram2.usecasediagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="Homomorphic.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Homomorphic.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Homomorphic.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Models.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Framework\Framework.csproj">
+      <Name>Framework</Name>
+      <Project>{63620886-2bf5-4ff9-8837-0ff85830953c}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

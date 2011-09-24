@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Framework.Filters.Smoothing.Frequency.Butterworth">
+    <Position X="0.75" Y="6.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\Frequency\Butterworth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.Frequency.Gaussian">
+    <Position X="7.25" Y="6.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\Frequency\Gaussian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.Frequency.Ideal">
+    <Position X="4" Y="6.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\Frequency\Ideal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.Gaussian">
+    <Position X="3" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABEAA=</HashCode>
+      <FileName>Filters\Smoothing\Gaussian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.Wiener">
+    <Position X="7.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\Wiener.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.Homomorphic">
+    <Position X="5.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQBAAAAAAAAAAAAAAAAADAAA=</HashCode>
+      <FileName>Filters\Smoothing\Homomorphic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.Isef">
+    <Position X="0.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAQAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\Isef.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Filters.Frequency.FrequencyDomainFilter&lt;T&gt;" Collapsed="true">
+    <Position X="4.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Filters\Frequency\FrequencyDomainFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Filters.Spatial.SpatialDomainFilter" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Filters\Spatial\SpatialDomainFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

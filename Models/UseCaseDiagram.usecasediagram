@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="45eb65e7-dd53-40d9-86ed-6a73bbfa86be" name="UseCaseDiagram" linkedPackageId="fd9fb403-66e2-46cd-b99b-eb826b828f7b" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="1fe9647c-5f55-4383-b6e2-d8a33427e1c4">
+      <elementDefinition Id="aa3b29ae-835e-4670-bb29-96b093a5ef6e" />
+      <body>Simple Image tasks: a user may simply open one / several image files, and save any changes made (by applying filters...) or save as new file ...</body>
+      <annotatedElements>
+        <subsystemMoniker Id="fa6e8af0-2efe-4518-b5ef-516b83969edd" LastKnownName="Simple Image Tasks" />
+      </annotatedElements>
+    </comment>
+    <comment Id="3f798d93-f466-437a-838a-96e993def159">
+      <elementDefinition Id="ed15c4ec-df61-472a-987b-0276c331a1be" />
+      <body>Simple Window Tasks: a user may be able to close opened windows (one / all), hide / show (minimize / maximize/ restore one / all), or navigate through the windows (by selecting one from a special window / focus previous / focus next)</body>
+      <annotatedElements>
+        <subsystemMoniker Id="1b47b0ab-0b5e-4b78-a220-a78737fdc1e5" LastKnownName="Simple Window Tasks" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="a75035fc-a7cc-47ef-bb9f-b8c32c9bbd24" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d371a3c5-bfbd-40b0-abd3-d0c6181eaa4f" />
+        <targetEnds>
+          <association Id="570ef07a-63ca-4dd5-997b-fd8f29de4be0" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Save Image" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="544c1ea7-7e56-4e2f-b799-594efcbcd6dd" LastKnownName="Save Image file" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3ed393cf-82df-4a47-a480-6e4554d008d8" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f22bae76-9a23-4200-b8e1-87d8bb14c562" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b7124e1e-9981-4706-9da4-700c6ed44d1e" name="Save Image" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b887f5f4-9300-4f44-89ab-7956466ba416" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4170af2f-9b77-48b7-a98a-64dfc4d7af53" />
+          </association>
+          <association Id="4d71e4d1-b402-4d43-b13e-cad4bf3c1600" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Open Image" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="29af732f-1a65-415c-ae7e-e88f33950856" LastKnownName="Open Image file" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ca439d26-158a-4039-bcc7-1223c2fd2cf3" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9229f89e-bdbc-4a11-b039-d13b064588df" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c5198f18-634d-469f-95d4-9f2972ef734d" name="Open Image" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6bc2f10b-b62c-4cba-9866-5aeeba142762" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a133e17b-ce20-4b58-a4b5-f30aa5b01335" />
+          </association>
+          <association Id="92d10921-56c3-4ca7-8b5a-32b98828c0da" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Close" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="edc3c9bf-035b-4117-a658-69f6f6d11eee" LastKnownName="Close" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d14c4050-1bd2-4592-a818-94e51153b24f" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ff446d34-3151-433a-9ae2-42b791f14536" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f9bc0e15-d9e5-4dc4-b498-42fd31a12de3" name="Close" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="545b9bb9-d744-4408-bc6c-57af211da9a4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b3800b72-035e-4dd8-9946-fbe829de88ff" />
+          </association>
+          <association Id="c8512d87-318c-4adb-aac0-5009f516f099" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Hide / Show" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e9d39d70-06c2-45aa-a378-1302435bdb6f" LastKnownName="Hide / Show" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8f2716d1-e406-4501-8cdc-df279397facf" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0bee1ed6-703e-4e3d-a890-6eab2b1261e2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="68d81c9e-dada-4f0d-b4d5-9b1a292c09ea" name="Hide / Show" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ec239a99-cca6-4ebc-a316-e1383ced8c7b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5dd03e25-82b4-466e-80f4-a11761034bb6" />
+          </association>
+          <association Id="dada6627-3f69-4082-9f23-d8673bca29c2" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Navigate" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="220b8c5c-ecd6-4845-ad56-020e5af72580" LastKnownName="Navigate" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6c0f2163-361e-4bbe-83e5-6b669a6ff849" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="841602c5-2a3f-412b-b641-9943dbb387c6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dd50fead-f62a-4509-be7c-03b9569dcfb2" name="Navigate" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="45afbbed-6042-48aa-ab3d-da1eebda79da" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4b36df30-4f07-4ec4-b4b7-ad71a46fc5d9" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="29af732f-1a65-415c-ae7e-e88f33950856" name="Open Image file" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ccdbdd74-4211-4ce4-80a0-19414fb03ea7" />
+        <subjects>
+          <subsystemMoniker Id="fa6e8af0-2efe-4518-b5ef-516b83969edd" LastKnownName="Simple Image Tasks" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="544c1ea7-7e56-4e2f-b799-594efcbcd6dd" name="Save Image file" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3c1f8f72-d6b7-4647-8572-fb277163baca" />
+        <subjects>
+          <subsystemMoniker Id="fa6e8af0-2efe-4518-b5ef-516b83969edd" LastKnownName="Simple Image Tasks" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="fa6e8af0-2efe-4518-b5ef-516b83969edd" name="Simple Image Tasks" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0df5fe66-c5d7-41f5-b0ad-60fd6b988992" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="1b47b0ab-0b5e-4b78-a220-a78737fdc1e5" name="Simple Window Tasks" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d8d6f576-298c-4ef5-adb0-64c272335a4e" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="edc3c9bf-035b-4117-a658-69f6f6d11eee" name="Close" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3ea99b3f-dcfb-4553-a31e-91528109a424" />
+        <subjects>
+          <subsystemMoniker Id="1b47b0ab-0b5e-4b78-a220-a78737fdc1e5" LastKnownName="Simple Window Tasks" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="e9d39d70-06c2-45aa-a378-1302435bdb6f" name="Hide / Show" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b2cc1a44-a6b0-4fa0-a203-da172826face" />
+        <subjects>
+          <subsystemMoniker Id="1b47b0ab-0b5e-4b78-a220-a78737fdc1e5" LastKnownName="Simple Window Tasks" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="220b8c5c-ecd6-4845-ad56-020e5af72580" name="Navigate" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c70a92bb-7e7f-4a9a-880e-7638ba3235f3" />
+        <subjects>
+          <subsystemMoniker Id="1b47b0ab-0b5e-4b78-a220-a78737fdc1e5" LastKnownName="Simple Window Tasks" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="fd9fb403-66e2-46cd-b99b-eb826b828f7b" name="Models">
+    <elementDefinition Id="eb418ddc-a14d-4b32-99ed-78930d016879" />
+    <profileInstances>
+      <packageHasProfileInstances Id="dd7e0783-ff1b-4ced-b4ca-00c4095bf49e">
+        <profileInstance Id="d844b01c-2bf5-49c9-b0ba-8c937cc7cf11" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="67342099-8683-4c2d-95a5-5b75ce4c28c0">
+        <profileInstance Id="49ea6f63-48c1-43d3-b715-611d19b34175" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

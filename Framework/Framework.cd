@@ -1,0 +1,791 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Framework.Batch.BatchFilter">
+    <Position X="22.75" Y="8.5" Width="3" />
+    <NestedTypes>
+      <Delegate Name="Framework.Batch.BatchFilter.FilterExecutedDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Batch\BatchFilter.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Framework.Batch.BatchFilter.FilterMeasuredDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Batch\BatchFilter.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Framework.Batch.BatchFilter.BatchFinishedDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Batch\BatchFilter.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ABAggIAAASAIQCQgAAAAAAAAAwQAAAACIBAAEAAAABA=</HashCode>
+      <FileName>Batch\BatchFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Batch.Graph">
+    <Position X="33.75" Y="8.5" Width="3" />
+    <NestedTypes>
+      <Delegate Name="Framework.Batch.Graph.FilterExecutedDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Batch\Graph.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Framework.Batch.Graph.FilterMeasuredDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Batch\Graph.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIQAYAAQgABAAEAAAAAAAAAAAABgAAAAAABA=</HashCode>
+      <FileName>Batch\Graph.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Batch.MetricExec">
+    <Position X="9.25" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Batch\MetricExec.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Batch.MetricExecBase">
+    <Position X="10.5" Y="12.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAACQAAAAsAAAAGCAAABAAAAAAAAAQAAA=</HashCode>
+      <FileName>Batch\MetricExecBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Batch.MetricExecReference">
+    <Position X="11.5" Y="17" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Batch\MetricExecReference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Batch.Node">
+    <Position X="15.25" Y="6.5" Width="3" />
+    <NestedTypes>
+      <Delegate Name="Framework.Batch.Node.FilterExecutedDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Batch\Node.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Framework.Batch.Node.FilterMeasuredDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Batch\Node.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAQAKAAQgABAEQAAQAAAAAAAAABAEAAAAAJQ=</HashCode>
+      <FileName>Batch\Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Batch.NodeFilter">
+    <Position X="15.25" Y="12.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAEAAAAAAAAAAAAAAEAAAAABA=</HashCode>
+      <FileName>Batch\NodeFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Batch.RowNodeRelation">
+    <Position X="19" Y="16" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Batch\Structures.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Batch.RowNode">
+    <Position X="38" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAIAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Batch\Structures.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Batch.RowBatchFilter">
+    <Position X="19" Y="13.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAIBAACAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Batch\Structures.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Batch.RowImage">
+    <Position X="26.75" Y="8.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Batch\Structures.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Batch.RowMetric">
+    <Position X="30" Y="13" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Batch\Structures.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Batch.RowMetricExecution">
+    <Position X="38" Y="15.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAIAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Batch\Structures.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Batch.RowResults">
+    <Position X="30" Y="15" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAABiAAAAIBAACBAAAAgABAAAAAAAAAAAAAAAABAQAA=</HashCode>
+      <FileName>Batch\Structures.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Facilities">
+    <Position X="33.75" Y="13" Width="3.25" />
+    <NestedTypes>
+      <Delegate Name="Framework.Core.Facilities.MetricDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\Facilities.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Framework.Core.Facilities.PixelRGBBitmapCallback" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\Facilities.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Framework.Core.Facilities.BitmapByteArrayParserDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\Facilities.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>JJAIBgAAAQACAARAEAAAQAAEAABAAAAABBAAwBEAAIA=</HashCode>
+      <FileName>Core\Facilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Factory">
+    <Position X="41.25" Y="12.75" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAACAAAAAAAAEAQAAAAEAAASAAAAAAAA=</HashCode>
+      <FileName>Core\Factory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.WeakImage" BaseTypeListCollapsed="true">
+    <Position X="15.75" Y="15.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAASAGQAQAAAAAAAAAAAAAQBAAAIAAAAAAAAA=</HashCode>
+      <FileName>Core\WeakImage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Framework.Core.Filters.Base.Filter" BaseTypeListCollapsed="true">
+    <Position X="19" Y="10.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAACAAAAAAAQAAAAAAACAAAAAABAAAA=</HashCode>
+      <FileName>Core\Filters\Base\Filter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Framework.Core.Filters.Base.FilterAttribute">
+    <Position X="30.25" Y="8.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAJAAAAAAgQAAEAAIAAAQCAAAEEIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Filters\Base\FilterAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Filters.Base.FilterCore">
+    <Position X="122.75" Y="0.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Core\Filters\Base\FilterCore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Filters.Frequency.Complex">
+    <Position X="26.75" Y="14.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAYAUAAAAAAAAAAAAAEAAAAAEgBBA=</HashCode>
+      <FileName>Core\Filters\Frequency\Complex.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Filters.Frequency.ComplexImage">
+    <Position X="26.75" Y="10.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Framework.Core.Filters.Frequency.ComplexImage.ComplexImageBitmapType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\Filters\Frequency\ComplexImage.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAACAAAAEAgAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Core\Filters\Frequency\ComplexImage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Filters.Frequency.FrequencyDomainFilter&lt;T&gt;">
+    <Position X="37" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Filters\Frequency\FrequencyDomainFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Filters.Frequency.FrequencyFilter">
+    <Position X="38" Y="17.5" Width="2.25" />
+    <NestedTypes>
+      <Delegate Name="Framework.Core.Filters.Frequency.FrequencyFilter.FrequencyFilterEquation" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\Filters\Frequency\FrequencyFilter.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Core\Filters\Frequency\FrequencyFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Filters.Spatial.Kernel2D">
+    <Position X="41.25" Y="8.5" Width="3.25" />
+    <NestedTypes>
+      <Delegate Name="Framework.Core.Filters.Spatial.Kernel2D.ByteKernel2DCallBack" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\Filters\Spatial\Kernel2D.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Framework.Core.Filters.Spatial.Kernel2D.DoubleKernel2DCallBack" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\Filters\Spatial\Kernel2D.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAACAAAAAAQABEAAAgIAIAAEAAACAAABA=</HashCode>
+      <FileName>Core\Filters\Spatial\Kernel2D.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Filters.Spatial.Kernel2DBatch">
+    <Position X="19" Y="8.5" Width="1.75" />
+    <NestedTypes>
+      <Delegate Name="Framework.Core.Filters.Spatial.Kernel2DBatch.EvaluateKernelDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\Filters\Spatial\Kernel2DBatch.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Framework.Core.Filters.Spatial.Kernel2DBatch.ReduceDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\Filters\Spatial\Kernel2DBatch.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Filters\Spatial\Kernel2DBatch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Filters.Spatial.SpatialDomainFilter">
+    <Position X="150.5" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Filters\Spatial\SpatialDomainFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Metrics.AllMetric">
+    <Position X="5.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Metrics\AllMetric.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Metrics.AllMetricAttribute">
+    <Position X="6.5" Y="15.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Metrics\AllMetricAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Metrics.EdgeDetectionMetric">
+    <Position X="0.5" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Metrics\EdgeDetectionMetric.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Metrics.EdgeDetectionMetricAttribute">
+    <Position X="0.5" Y="15.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Metrics\EdgeDetectionMetricAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Metrics.FilterMetricAttribute">
+    <Position X="3.5" Y="12.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Metrics\FilterMetricAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Metrics.Metric">
+    <Position X="1.75" Y="0.5" Width="4" />
+    <NestedTypes>
+      <Delegate Name="Framework.Core.Metrics.Metric.MetricDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\Metrics\Metric.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>QAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Metrics\Metric.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Metrics.MetricAttribute">
+    <Position X="22.75" Y="16" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAgAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Metrics\MetricAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Metrics.MetricMethod">
+    <Position X="41.25" Y="17.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAABgAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Metrics\MetricMethod.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Metrics.MetricResult">
+    <Position X="41.25" Y="15.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Core\Metrics\MetricResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Metrics.SmoothMetric">
+    <Position X="3.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Metrics\SmoothMetric.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Metrics.SmoothMetricAttribute">
+    <Position X="3.75" Y="15.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Metrics\SmoothMetricAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Core.Transforms.TransformCoreBase&lt;DEST&gt;">
+    <Position X="4.75" Y="6.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAECIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Transforms\TransformCoreBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.BandPass.Butterworth">
+    <Position X="11.5" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\BandPass\Butterworth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.BandPass.Gaussian">
+    <Position X="16" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\BandPass\Gaussian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.BandPass.Ideal">
+    <Position X="20.5" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\BandPass\Ideal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.BandReject.Butterworth">
+    <Position X="29.5" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\BandReject\Butterworth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.BandReject.Gaussian">
+    <Position X="38.5" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\BandReject\Gaussian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.BandReject.Ideal">
+    <Position X="47.5" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\BandReject\Ideal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.Probabilistic.Canny">
+    <Position X="164.25" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAQAAAAAAAIAAAQAAAAAABAAA=</HashCode>
+      <FileName>Filters\EdgeDetection\Probabilistic\Canny.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.Probabilistic.ShenCastan">
+    <Position X="181.25" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>ABIIAAAAAAAAAAAAAAEAQAAAAAAAAAAAQAAAAAABAAA=</HashCode>
+      <FileName>Filters\EdgeDetection\Probabilistic\ShenCastan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.SndDerivate.Laplacian">
+    <Position X="199.25" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABEAA=</HashCode>
+      <FileName>Filters\EdgeDetection\SndDerivate\Laplacian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.SndDerivate.LaplacianOfGauss">
+    <Position X="217.25" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABEAA=</HashCode>
+      <FileName>Filters\EdgeDetection\SndDerivate\LaplacianOfGauss.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.SndDerivate.MarrHildreth">
+    <Position X="65.5" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAQAAAAAAAAAAIAAAAAAABAAA=</HashCode>
+      <FileName>Filters\EdgeDetection\SndDerivate\MarrHildreth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.Template.FreiChen">
+    <Position X="88" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\EdgeDetection\Template\FreiChen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.Template.Kirsch">
+    <Position X="109" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\EdgeDetection\Template\Kirsch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.Template.Prewitt">
+    <Position X="120.5" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\EdgeDetection\Template\Prewitt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.Template.Roberts">
+    <Position X="132.75" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\EdgeDetection\Template\Roberts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.EdgeDetection.Template.Sobel">
+    <Position X="146.25" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\EdgeDetection\Template\Sobel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Noise.GammaNoise">
+    <Position X="168.75" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Noise\GammaNoise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Noise.GaussianNoise">
+    <Position X="185.75" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Noise\GaussianNoise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Noise.NegativeExponentialNoise">
+    <Position X="203.75" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Noise\NegativeExponentialNoise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Noise.RayleighNoise">
+    <Position X="221.75" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Noise\RayleighNoise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Noise.SaltPepperNoise">
+    <Position X="70" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Noise\SaltPepperNoise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Noise.UniformNoise">
+    <Position X="92.5" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Noise\UniformNoise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Sharpening.Butterworth">
+    <Position X="25" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Sharpening\Butterworth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Sharpening.Gaussian">
+    <Position X="34" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Sharpening\Gaussian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Sharpening.Ideal">
+    <Position X="43" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Sharpening\Ideal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Simple.BipolarThreshold">
+    <Position X="150.75" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Simple\BipolarThreshold.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Simple.Greyscale">
+    <Position X="173.25" Y="4.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Simple\Grayscale.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Simple.HighThreshold">
+    <Position X="190.25" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Simple\HighThreshold.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Simple.Hystersis">
+    <Position X="208.25" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAACABAAA=</HashCode>
+      <FileName>Filters\Simple\Hystersis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Simple.Invert">
+    <Position X="226.25" Y="4.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Simple\Invert.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Simple.LowThreshold">
+    <Position X="74.5" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Simple\LowThreshold.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Simple.NonMaximumSupression">
+    <Position X="97" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Filters\Simple\NonMaximumSupression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Simple.Normalize">
+    <Position X="113.5" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Simple\Normalize.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Simple.Padding">
+    <Position X="125" Y="4.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Filters\Simple\Padding.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Simple.SkeletonBinary">
+    <Position X="137.25" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAQAAAAAAAAAAAAAEAAAABAAA=</HashCode>
+      <FileName>Filters\Simple\SkeletonBinary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Simple.ThinningBinary">
+    <Position X="155.25" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAGAAAAAAAAQAAAAAAAAAAAAEAAAAABAAA=</HashCode>
+      <FileName>Filters\Simple\ThinningBinary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.Frequency.Butterworth">
+    <Position X="52" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\Frequency\Butterworth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.Frequency.Gaussian">
+    <Position X="56.5" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\Frequency\Gaussian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.Frequency.Ideal">
+    <Position X="61" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\Frequency\Ideal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.Gaussian">
+    <Position X="229.5" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABEAA=</HashCode>
+      <FileName>Filters\Smoothing\Gaussian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.Homomorphic">
+    <Position X="79" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQBAAAAAAAAAAAAAAAAADAAA=</HashCode>
+      <FileName>Filters\Smoothing\Homomorphic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.Isef">
+    <Position X="100" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAQAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\Isef.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.Wiener">
+    <Position X="116" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\Wiener.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.Mean.ArithmeticMean">
+    <Position X="128.25" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\Mean\ArithmeticMean.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.Mean.ContraharmonicMean">
+    <Position X="141.75" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\Mean\ContraharmonicMean.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.Mean.GeometricMean">
+    <Position X="159.75" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\Mean\GeometricMean.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.Mean.HarmonicMean">
+    <Position X="176.75" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\Mean\HarmonicMean.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.OrderStatistics.AlphaTrimmedMean">
+    <Position X="194.75" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\OrderStatistics\AlphaTrimmedMean.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.OrderStatistics.Max">
+    <Position X="212.75" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\OrderStatistics\Max.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.OrderStatistics.Median">
+    <Position X="234" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\OrderStatistics\Median.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.OrderStatistics.Midpoint">
+    <Position X="83.5" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\OrderStatistics\Midpoint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Filters.Smoothing.OrderStatistics.Min">
+    <Position X="104.5" Y="4.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Filters\Smoothing\OrderStatistics\Min.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Range.Rangeable">
+    <Position X="38" Y="10.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>ABAAIAAAABAAAAAkEAAAQAAIAgAAAAAAMABgAAAABAA=</HashCode>
+      <FileName>Range\Rangeable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Transforms.DiscreteFourierTransform">
+    <Position X="0.75" Y="9" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAECIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transforms\DiscreteFourierTransform.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Transforms.FastFourierTransform">
+    <Position X="4.5" Y="9" Width="3" />
+    <NestedTypes>
+      <Enum Name="Framework.Transforms.FastFourierTransform.FFTDirection" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Transforms\FastFourierTransform.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAMAAAAAAAAAAAAAAAECIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transforms\FastFourierTransform.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Transforms.FourierTransform">
+    <Position X="8.25" Y="9" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAIAAAAAAECIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transforms\FourierTransform.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Framework.Batch.MetricExecutionType">
+    <Position X="22.75" Y="14.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Batch\Structures.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

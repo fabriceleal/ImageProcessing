@@ -1,0 +1,24 @@
+# Make dozygen configuration file
+
+
+[Reflection.Assembly]::loadWithPartialName("system.io")
+
+$baseDir = [system.io.path]::GetDirectoryName( $myinvocation.MyCommand.Definition )
+
+$fname = "doxygen_framework_config.conf"
+$fname = [System.io.path]::combine( $baseDir , $fname )
+		
+$doxygen = "doxygen\doxygen.exe"
+$doxygen = [System.io.path]::combine( $baseDir , $doxygen )
+
+if([System.IO.File]::Exists($fname)){
+	
+	$opt = "u"
+}else{
+
+	$opt = "g"
+}
+
+$script_block = [System.Management.Automation.ScriptBlock]::Create( $codigo )
+
+& $doxygen -$opt $fname

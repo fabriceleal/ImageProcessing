@@ -1,0 +1,1615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="eb418ddc-a14d-4b32-99ed-78930d016879"
+  name="Models" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="7f49d1d3-13cb-47d9-a324-e645fd1c4ff0">
+      <body>Somar 1 ao valor q vao ser posto em ln(x), para evitar ln(0). Este valor é retirado no final, ao fazer exp(x).</body>
+    </comment>
+    <comment
+      Id="176d984e-30c5-48ac-a431-a9481bccb60c">
+      <body>Fontes:
+* HOMOMORPHIC PROCESSING AND ITS APPLICATION TO IMAGE ENHANCEMENT
+* 2D Signal &amp; Image Processing</body>
+    </comment>
+    <comment
+      Id="157b47b4-f599-4954-be4c-fa2b504e826e">
+      <body>ln( i(x, y) )</body>
+    </comment>
+    <comment
+      Id="f8294ffc-6cbf-4426-a0f3-ab2f32af6285">
+      <body>ln( r(x, y) )</body>
+    </comment>
+    <comment
+      Id="811190f2-b09c-4d8e-a5ce-38c3fd1bd527">
+      <body>Atenuar</body>
+    </comment>
+    <comment
+      Id="0b76f90f-5b76-41cd-ad1d-4152b5ead73a">
+      <body>Enfase</body>
+    </comment>
+    <comment
+      Id="6164aeac-ade9-4370-a473-5a677e99c2ab">
+      <body>*</body>
+    </comment>
+    <comment
+      Id="4e301184-6dc6-41ab-a153-21e104dbd6f3">
+      <body>*</body>
+    </comment>
+    <comment
+      Id="3bd513a7-8274-465f-8c6c-71b8440443c3">
+      <body>FONTES:
+* shen.c</body>
+    </comment>
+    <comment
+      Id="6fcceff3-ba3f-4d6f-9e12-6dc1a71ddc32">
+      <body>compute_ISEF()</body>
+    </comment>
+    <comment
+      Id="834acae4-a23e-41e9-a015-929ad76c2ab7">
+      <body>shen()</body>
+    </comment>
+    <comment
+      Id="86214974-e15b-404d-bf10-129687336193">
+      <body>compute_bli()</body>
+    </comment>
+    <comment
+      Id="cdc978f5-cc5a-4ce8-8ec4-ae9a8612deea">
+      <body>locate_zero_crossings()</body>
+    </comment>
+    <comment
+      Id="f1a00dc1-3d3b-4fea-8318-7b53cac01941">
+      <body>* The bli is computed by taking the difference between the smoothed image and the original image.  In Shen and Castan's paper this is shown to approximate the band-limited laplacian of the image.  The bli is then made by setting all values in the bli to 1 where the laplacian is positive and 0 otherwise. </body>
+    </comment>
+    <comment
+      Id="0f818d95-e592-4d68-9209-e03a6f80bb97">
+      <body>first apply the filter in the vertical direcion (to the rows), then apply the filter in the horizontal direction (to the columns);  apply this filter to the results of the previous one</body>
+    </comment>
+    <comment
+      Id="acae5124-e6b5-46b5-b3de-68e81be31334">
+      <body>* ignore pixels around the boundary of the image
+* next check if pixel is a zero-crossing of the laplacian
+** do gradient thresholding
+* else
+** = 0</body>
+    </comment>
+    <comment
+      Id="eb772cca-14f6-4067-ad41-f6bee19624a7">
+      <body>is_candidate_edge()</body>
+    </comment>
+    <comment
+      Id="96913b6a-4c04-44da-bf41-260a806200ac">
+      <body>compute_adaptive_gradient()</body>
+    </comment>
+    <comment
+      Id="86e79ae7-6cdf-4a91-806d-bd0ca2dbabe7">
+      <body>(2)</body>
+    </comment>
+    <comment
+      Id="a8f83fa9-ef7a-40ab-87a2-73437539c81c">
+      <body>threshold_edges()</body>
+    </comment>
+    <comment
+      Id="37774df8-bf21-4c08-8a70-9f3d23975484">
+      <body>(3)</body>
+    </comment>
+    <comment
+      Id="503293aa-2458-43a0-b686-5ca5dc028dc8">
+      <body>(4)</body>
+    </comment>
+    <comment
+      Id="d823a03c-31b2-4910-b037-435d97110ffa">
+      <body>(3)</body>
+    </comment>
+    <comment
+      Id="6b2e22e7-ebd6-4d64-be57-2ba216abc9dc">
+      <body>(1)</body>
+    </comment>
+    <comment
+      Id="2d74a858-b1e9-4447-9c49-d6561e3ef826">
+      <body>(4)</body>
+    </comment>
+    <comment
+      Id="fa779c4a-5958-48bc-9abd-053fc62a87c6">
+      <body>estimate_thresh()</body>
+    </comment>
+    <comment
+      Id="d4349cbf-13fd-41c6-bf8f-c2a14c38fe10">
+      <body>mark_connected()</body>
+    </comment>
+    <comment
+      Id="1fbfd25f-b9ee-4e41-9b18-d410815e9226">
+      <body>Using integral shen filter... apply convolution</body>
+    </comment>
+    <comment
+      Id="d34af93f-871c-43c4-a992-5af59f80ec4d">
+      <body>... You can then perform a (hysteresis) threshold to achieve a segmented image (see Canny) ...</body>
+    </comment>
+    <comment
+      Id="1672cc89-a801-47ee-a2db-61fb0a2c0c0d">
+      <body>Suppress non local maxima</body>
+    </comment>
+    <comment
+      Id="cc822870-3da8-455e-a3b1-ce453f44c0e9">
+      <body>FONTES:
+shen.m
+.
+.
+.
+</body>
+    </comment>
+    <comment
+      Id="e045a081-94bb-432d-9764-d39c3f37393a">
+      <body>shen.m</body>
+    </comment>
+    <comment
+      Id="e0e3cab4-0f16-4778-b203-b8ccd0215344">
+      <body>homomorphic.m</body>
+    </comment>
+    <comment
+      Id="10976901-f29a-47fd-be4d-63f7c5f31068">
+      <body>Ihomomorphic.m</body>
+    </comment>
+    <comment
+      Id="58cece57-f35a-404d-a969-38018a8adfe2">
+      <body>Greyscale</body>
+    </comment>
+    <comment
+      Id="aa3b29ae-835e-4670-bb29-96b093a5ef6e">
+      <body>Simple Image tasks: a user may simply open one / several image files, and save any changes made (by applying filters...) or save as new file ...</body>
+      <annotatedElements>
+        <subsystemMoniker
+          Id="0df5fe66-c5d7-41f5-b0ad-60fd6b988992"
+          LastKnownName="Simple Image Tasks"
+          LastKnownLocation="Models.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="ed15c4ec-df61-472a-987b-0276c331a1be">
+      <body>Simple Window Tasks: a user may be able to close opened windows (one / all), hide / show (minimize / maximize/ restore one / all), or navigate through the windows (by selecting one from a special window / focus previous / focus next)</body>
+      <annotatedElements>
+        <subsystemMoniker
+          Id="d8d6f576-298c-4ef5-adb0-64c272335a4e"
+          LastKnownName="Simple Window Tasks"
+          LastKnownLocation="Models.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="cd87d366-1924-4177-85ed-2267c8f1b237">
+      <body>User may choose a filter to run against an image; depending on the filter, he may need to setup some parameters.
+After the execution, user get the resulting new image.</body>
+      <annotatedElements>
+        <subsystemMoniker
+          Id="7650a685-e988-46c5-9e7e-cef31ac88848"
+          LastKnownName="Filter Setup and Execution"
+          LastKnownLocation="Models.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="fc907808-6486-430b-a5f4-5084a8185775">
+      <body>User may view / save / reload metrics and results. Saving to different formats: csv, xml, html. Saving can be automated.</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="d387e260-25eb-4cd5-9af6-531412288307"
+          LastKnownName="Collect Results and Measures"
+          LastKnownLocation="Models.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="d93ee9ec-3473-412a-a37d-d3e0c92e1cfa">
+      <body>User may control the execution of the batch: Start / Resume, Pause, Stop (Abort).</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="b012f255-0b4c-4547-987b-cd8aa44d24b0"
+          LastKnownName="Control Execution"
+          LastKnownLocation="Models.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="b894b54e-3901-4105-af7f-42315e651ba1">
+      <body>User setup batch: choose "reference images" (that will be used when calculating measures against calculated images), images (to run the filters against), choose and setup filters (parameterizations and measurements), setup auto saving.</body>
+      <annotatedElements>
+        <subsystemMoniker
+          Id="8d0884fb-833d-4c23-9f63-96b2485ed678"
+          LastKnownName="Batch Setup"
+          LastKnownLocation="Models.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="a9ec6b44-947b-4502-8a2b-448dc0681d70">
+      <body>User may open image file in the application. The user can then apply multiple filters to that image.</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="cbaee27e-e1ce-4562-9a11-b1e6e94db21a"
+          LastKnownName="Choose Image"
+          LastKnownLocation="Models.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="a1475493-afcf-4b74-bb82-20794e562f1e">
+      <body>User may save / load to disk the batch. This batch includes all settings ( images, filters to run, filters' settings, autosave settings).</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="16022894-a780-45b4-9f16-78dfd159ebb3"
+          LastKnownName="Load / Save"
+          LastKnownLocation="Models.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <activity
+        Id="6c488091-f4c5-40ab-8d2f-910b4d927dc5"
+        name="Homomorphic"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="a05de0a8-3a45-4fc1-a20b-bca3cb6f06e5"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2e0d1d96-3981-49c4-98c5-56cbeaeda8e4"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9beecf52-e2c0-4f1c-8900-ec89ce639e1b"
+                  LastKnownName="ln(x+1)"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode
+            Id="a09af342-316c-4345-b948-b843596caf09"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="9beecf52-e2c0-4f1c-8900-ec89ce639e1b"
+            name="ln(x+1)"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="193530a0-506d-4658-9850-6ed17bb68450"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ebd97dd6-f007-4db6-b0eb-e5fc50e551a9"
+                  LastKnownName="DFT"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="ebd97dd6-f007-4db6-b0eb-e5fc50e551a9"
+            name="DFT"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1fd03424-a834-4166-b26b-3a45dc150873"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="c6a1786d-9b06-4add-84c2-2650d513b963"
+                  LastKnownName="Fork1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="399a262e-2546-488f-8922-bfcda76e5b8f"
+            name="DFT^-1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="802c7653-e36b-4abe-84f9-d19a2ce4d0fa"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0240f5b2-5d9b-4c34-856e-281134079dee"
+                  LastKnownName="exp(x)-1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="0240f5b2-5d9b-4c34-856e-281134079dee"
+            name="exp(x)-1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="50a04b98-4d43-452a-9c80-335242b0e107"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="a09af342-316c-4345-b948-b843596caf09"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode
+            Id="c6a1786d-9b06-4add-84c2-2650d513b963"
+            name="Fork1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f5b2945e-4ede-4e1a-af48-fe2d7f44caf3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="399badae-94d8-40b1-9c4c-fbee20818400"
+                  LastKnownName="(High Pass)"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="9d3e84ce-8278-47e1-be85-a31e10ed6b98"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c84105c7-f862-43a3-95ce-3fe97a3f8a8e"
+                  LastKnownName="(Low Pass)"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction
+            Id="399badae-94d8-40b1-9c4c-fbee20818400"
+            name="(High Pass)"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="70849902-e63a-41e5-a635-8b1334eb7aa7"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b7e75931-97a6-4bce-81f4-b18d524199c9"
+                  LastKnownName="( X )"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c84105c7-f862-43a3-95ce-3fe97a3f8a8e"
+            name="(Low Pass)"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d3598162-5a23-42a3-ae62-8b76d4c1014e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b3b1efa4-137c-46c3-acce-fe6e4f4b3295"
+                  LastKnownName="( X )"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="736ec45d-9fbb-4d3d-bd6f-ee158cb70efd"
+            name="( + )"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="82e947a3-8822-4821-8cdc-8f822bce2677"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="399a262e-2546-488f-8922-bfcda76e5b8f"
+                  LastKnownName="DFT^-1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b7e75931-97a6-4bce-81f4-b18d524199c9"
+            name="( X )"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a722816e-0924-49ba-9ed9-10363b79c69f"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="736ec45d-9fbb-4d3d-bd6f-ee158cb70efd"
+                  LastKnownName="( + )"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b3b1efa4-137c-46c3-acce-fe6e4f4b3295"
+            name="( X )"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3ebd6ed3-edda-484d-8862-f38257384ad3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="736ec45d-9fbb-4d3d-bd6f-ee158cb70efd"
+                  LastKnownName="( + )"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="acc59f35-dba2-4206-8a7e-9017a74e02e9"
+            name="α &lt;  1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ef26c647-ee8b-4bc0-9c98-e9220dc731aa"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b3b1efa4-137c-46c3-acce-fe6e4f4b3295"
+                  LastKnownName="( X )"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="3a09daae-a872-4d92-b92e-e15fa60794ad"
+            name="β &gt; 1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e4f77ec2-b874-4fb2-a127-348dbd5f1063"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b7e75931-97a6-4bce-81f4-b18d524199c9"
+                  LastKnownName="( X )"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="53df6d40-4b65-49ee-9fa1-f2cd8634c01f"
+        name="ShenCastan"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="85f8bb46-21aa-44e7-b83d-a012723455e0"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6af9f090-5885-4f5c-aced-4feabad0f6aa"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="eb452e75-5ab0-4278-b57a-c32b32818dbd"
+                  LastKnownName="Smooth input image using recursively implemented ISEF filter"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode
+            Id="0d5afddc-4493-48e0-8096-a23168fbbf89"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="eb452e75-5ab0-4278-b57a-c32b32818dbd"
+            name="Smooth input image using recursively implemented ISEF filter"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2f70a946-9720-436a-8f5b-9592b2b0b53a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="774547e3-e177-411e-b720-c9499cd0c7d5"
+                  LastKnownName="Compute bli image band-limited laplacian image from smoothed image"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="774547e3-e177-411e-b720-c9499cd0c7d5"
+            name="Compute bli image band-limited laplacian image from smoothed image"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="89b55138-901b-4dbd-be00-07311e90a28e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="373fd3cf-a458-4f1a-a413-9148b1efbc17"
+                  LastKnownName="Perform edge detection using bli and gradient thresholding"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="373fd3cf-a458-4f1a-a413-9148b1efbc17"
+            name="Perform edge detection using bli and gradient thresholding"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="272a082d-f1c2-4f7b-84b0-ffcf09b71339"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="96f76b11-9cbf-479f-81ab-026b4f6e7799"
+                  LastKnownName="Threshold edges"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode
+            Id="b22f630a-5b26-4e2f-8cf6-598d6d59bdca"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="12d463da-65c5-4fd0-b4ee-f94b4a48d108"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="0d5afddc-4493-48e0-8096-a23168fbbf89"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction
+            Id="ddd5f79e-faf3-42c4-bd2d-b2f09a4e263c"
+            name="FOREACH (pixel)"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d4d04bb8-3d3e-4183-a0b5-e99ec0af0a43"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="ced3dc03-bf34-4ff1-b3c6-1dc5afd47b63"
+                  LastKnownName="ActivityFinal2"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="ced3dc03-bf34-4ff1-b3c6-1dc5afd47b63"
+            name="ActivityFinal2"
+            isLeaf="false" />
+          <initialNode
+            Id="5edd5f39-ac68-4be5-afda-c86fab2f7152"
+            name="Initial2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="35887f6b-25d2-4c5f-961c-f1c6374e1515"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ddd5f79e-faf3-42c4-bd2d-b2f09a4e263c"
+                  LastKnownName="FOREACH (pixel)"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="96f76b11-9cbf-479f-81ab-026b4f6e7799"
+            name="Threshold edges"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6debb0dc-515b-4a4c-8a67-13e1816242c8"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="b22f630a-5b26-4e2f-8cf6-598d6d59bdca"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <initialNode
+            Id="ca521205-a676-4462-8b2e-2bf3e2836a96"
+            name="Initial3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b0958213-1161-4c79-b0c7-df3a28907447"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f8e37e87-5e59-4205-bafa-9e47fc5d6d45"
+                  LastKnownName="FOREACH (pixel)"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode
+            Id="bc356e18-66c3-4c66-8639-8882d458614d"
+            name="ActivityFinal3"
+            isLeaf="false" />
+          <opaqueAction
+            Id="f8e37e87-5e59-4205-bafa-9e47fc5d6d45"
+            name="FOREACH (pixel)"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1c7008f2-f319-451a-b6da-dcc322b36ad0"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="bc356e18-66c3-4c66-8639-8882d458614d"
+                  LastKnownName="ActivityFinal3"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="0af2792f-e330-48ed-987e-728dd817073a"
+        name="ShenCastan_matlab"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <activityFinalNode
+            Id="51072505-ceb4-4272-afee-e597d301f600"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <initialNode
+            Id="c09be3d9-ac7c-48ca-987f-338b2c0b2b01"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a2d1ec40-dd0b-4eb1-9e61-5976c24a0a05"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ce743909-5583-49a1-af87-3bfb69c16dab"
+                  LastKnownName="Image smoothing"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="ce743909-5583-49a1-af87-3bfb69c16dab"
+            name="Image smoothing"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ab04352e-67ed-48f8-a627-d56fbfbf988a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="cf4022bd-be52-4b4c-ae8a-76c13c2fbcb0"
+                  LastKnownName="Edge detection (x and y axis)"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="cf4022bd-be52-4b4c-ae8a-76c13c2fbcb0"
+            name="Edge detection (x and y axis)"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="720ec77d-a721-40d1-9b72-8fc3e65c6c90"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b5c719d2-fbc3-404d-9b07-8bb0f3e177eb"
+                  LastKnownName="(maxl3.m)"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b5c719d2-fbc3-404d-9b07-8bb0f3e177eb"
+            name="(maxl3.m)"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="67d9efd8-1b41-4747-ba46-7a4f184c2aee"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e128b073-94c7-43e1-b961-eec420553fbd"
+                  LastKnownName="(hysthresh.m)"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="e128b073-94c7-43e1-b961-eec420553fbd"
+            name="(hysthresh.m)"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0e16f0f6-4668-4f1b-85e3-ba581d9cd51b"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="51072505-ceb4-4272-afee-e597d301f600"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="0cf9d7cb-81de-4cbe-bbdb-15a651b41703"
+        name="Homomorphic_matlab"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <activityFinalNode
+            Id="078fb073-61f7-42ea-a73c-5694635be342"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <initialNode
+            Id="ddb43fdc-bb3b-424c-8246-864d6f2f5662"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0fa8a1f4-3a41-4212-9595-b8483be1e2bb"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4642c675-c1be-4918-9aae-1b8debba81cb"
+                  LastKnownName="ln"
+                  LastKnownLocation="Models.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="4642c675-c1be-4918-9aae-1b8debba81cb"
+            name="ln"
+            isLeaf="false" />
+          <opaqueAction
+            Id="0c76f203-c76f-421b-b130-7ec57da32d3f"
+            name="DFT"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="e65ad9c4-277a-4fe8-bf5e-44dbf5219004"
+        name="User"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="464ca03c-3bc8-486d-9c80-4136f9da5427"
+        name="UseCase1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="d371a3c5-bfbd-40b0-abd3-d0c6181eaa4f"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="4170af2f-9b77-48b7-a98a-64dfc4d7af53"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Save Image"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3c1f8f72-d6b7-4647-8572-fb277163baca"
+              LastKnownName="Save Image file"
+              LastKnownLocation="Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f22bae76-9a23-4200-b8e1-87d8bb14c562"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b887f5f4-9300-4f44-89ab-7956466ba416"
+                  name="Save Image"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a133e17b-ce20-4b58-a4b5-f30aa5b01335"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Open Image"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ccdbdd74-4211-4ce4-80a0-19414fb03ea7"
+              LastKnownName="Open Image file"
+              LastKnownLocation="Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9229f89e-bdbc-4a11-b039-d13b064588df"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6bc2f10b-b62c-4cba-9866-5aeeba142762"
+                  name="Open Image"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b3800b72-035e-4dd8-9946-fbe829de88ff"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Close"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3ea99b3f-dcfb-4553-a31e-91528109a424"
+              LastKnownName="Close"
+              LastKnownLocation="Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ff446d34-3151-433a-9ae2-42b791f14536"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="545b9bb9-d744-4408-bc6c-57af211da9a4"
+                  name="Close"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5dd03e25-82b4-466e-80f4-a11761034bb6"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Hide / Show"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b2cc1a44-a6b0-4fa0-a203-da172826face"
+              LastKnownName="Hide / Show"
+              LastKnownLocation="Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0bee1ed6-703e-4e3d-a890-6eab2b1261e2"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ec239a99-cca6-4ebc-a316-e1383ced8c7b"
+                  name="Hide / Show"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4b36df30-4f07-4ec4-b4b7-ad71a46fc5d9"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Navigate"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c70a92bb-7e7f-4a9a-880e-7638ba3235f3"
+              LastKnownName="Navigate"
+              LastKnownLocation="Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="841602c5-2a3f-412b-b641-9943dbb387c6"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="45afbbed-6042-48aa-ab3d-da1eebda79da"
+                  name="Navigate"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ccdbdd74-4211-4ce4-80a0-19414fb03ea7"
+        name="Open Image file"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="0df5fe66-c5d7-41f5-b0ad-60fd6b988992"
+            LastKnownName="Simple Image Tasks"
+            LastKnownLocation="Models.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="0e3750c1-17a7-4ec5-855d-a5889077c530"
+        name="Application"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3c1f8f72-d6b7-4647-8572-fb277163baca"
+        name="Save Image file"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="0df5fe66-c5d7-41f5-b0ad-60fd6b988992"
+            LastKnownName="Simple Image Tasks"
+            LastKnownLocation="Models.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="0df5fe66-c5d7-41f5-b0ad-60fd6b988992"
+        name="Simple Image Tasks"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="d8d6f576-298c-4ef5-adb0-64c272335a4e"
+        name="Simple Window Tasks"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3ea99b3f-dcfb-4553-a31e-91528109a424"
+        name="Close"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="d8d6f576-298c-4ef5-adb0-64c272335a4e"
+            LastKnownName="Simple Window Tasks"
+            LastKnownLocation="Models.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b2cc1a44-a6b0-4fa0-a203-da172826face"
+        name="Hide / Show"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="d8d6f576-298c-4ef5-adb0-64c272335a4e"
+            LastKnownName="Simple Window Tasks"
+            LastKnownLocation="Models.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c70a92bb-7e7f-4a9a-880e-7638ba3235f3"
+        name="Navigate"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="d8d6f576-298c-4ef5-adb0-64c272335a4e"
+            LastKnownName="Simple Window Tasks"
+            LastKnownLocation="Models.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="ec4edc11-7ca3-4216-89a4-8210f35585dd"
+        name="Filter Execution"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="ab75233e-2e6a-4d7d-9f0a-0167ae5865f7"
+        name="Batch Filter Execution"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="8e03a931-3119-4493-a1fb-ace436cd31d7"
+        name="Filter Execution1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="611df7f2-7f2a-4cf3-a913-bf18dfceeedb"
+        name="Filter Execution2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="7650a685-e988-46c5-9e7e-cef31ac88848"
+        name="Filter Setup and Execution"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="d2aa08c4-0cb2-4677-b402-c8eafc6d5cd4">
+            <useCaseMoniker
+              Id="cbaee27e-e1ce-4562-9a11-b1e6e94db21a"
+              LastKnownName="Choose Image"
+              LastKnownLocation="Models.uml" />
+          </dependency>
+        </suppliersInternal>
+      </subsystem>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="d3479b47-a587-4b4e-99ae-a79c7dd79f97"
+        name="Batch Filter Execution"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="3f8b989e-811c-4e94-83a4-277567bd48d2">
+            <subsystemMoniker
+              Id="7650a685-e988-46c5-9e7e-cef31ac88848"
+              LastKnownName="Filter Setup and Execution"
+              LastKnownLocation="Models.uml" />
+          </dependency>
+          <dependency
+            Id="2be62168-9263-42bd-aba2-f5c4babdfda9">
+            <subsystemMoniker
+              Id="8d0884fb-833d-4c23-9f63-96b2485ed678"
+              LastKnownName="Batch Setup"
+              LastKnownLocation="Models.uml" />
+          </dependency>
+        </suppliersInternal>
+      </subsystem>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f853604c-87ae-4392-8260-9871df67fe88"
+        name="Parameterize Filter Execution"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="7650a685-e988-46c5-9e7e-cef31ac88848"
+            LastKnownName="Filter Setup and Execution"
+            LastKnownLocation="Models.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0407bbce-f829-4641-b3d4-4d8b828f29fb"
+        name="Execute Filter"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="acc98bdf-0d4a-4232-8661-7b054e2f7865">
+            <useCaseMoniker
+              Id="f853604c-87ae-4392-8260-9871df67fe88"
+              LastKnownName="Parameterize Filter Execution"
+              LastKnownLocation="Models.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="7650a685-e988-46c5-9e7e-cef31ac88848"
+            LastKnownName="Filter Setup and Execution"
+            LastKnownLocation="Models.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="3a7fb81c-1319-402a-8352-a87e46d24cf9"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="656054ee-efc7-413d-8f6d-c4e5dc3c5bad"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Batch Setup"
+            isLeaf="false"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="8d0884fb-833d-4c23-9f63-96b2485ed678"
+              LastKnownName="Batch Setup"
+              LastKnownLocation="Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b295797b-2591-4a1a-a919-ca0efb538a78"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a6f80ae7-4fe0-4b63-80cb-ed1fc5020242"
+                  name="Batch Setup"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a812d926-d495-4228-97a9-fd6f09af62c4"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Choose Image"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="cbaee27e-e1ce-4562-9a11-b1e6e94db21a"
+              LastKnownName="Choose Image"
+              LastKnownLocation="Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="85425cf8-4fc9-40ed-990a-b2991482ff91"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="67a80e1a-5e1b-4b7d-a633-5a3e012f0837"
+                  name="Choose Image"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="dee450db-4f9b-4f39-9b91-dff9f9c2b0ef"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Execute Filter"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="0407bbce-f829-4641-b3d4-4d8b828f29fb"
+              LastKnownName="Execute Filter"
+              LastKnownLocation="Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3c328193-5958-4056-af9c-968e0272e266"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5fc54ebd-ff4b-4920-b04b-49bc4bee3e06"
+                  name="Execute Filter"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="56222881-23e2-42a9-9e07-e000eb11ea38"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Control Execution"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b012f255-0b4c-4547-987b-cd8aa44d24b0"
+              LastKnownName="Control Execution"
+              LastKnownLocation="Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6ef8d921-0116-4e4f-8176-3ac1dc417c14"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a5dbad1d-641a-4f40-b57d-b76c9db9e5f5"
+                  name="Control Execution"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="06d20d1d-c1ac-4afc-a746-d2a24ce42fcf"
+        name="Setup &quot;Reference Images&quot;"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="8d0884fb-833d-4c23-9f63-96b2485ed678"
+            LastKnownName="Batch Setup"
+            LastKnownLocation="Models.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="26aec84f-1e31-4dbd-a164-a5e35fc6940e"
+        name="Setup Images"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="8d0884fb-833d-4c23-9f63-96b2485ed678"
+            LastKnownName="Batch Setup"
+            LastKnownLocation="Models.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="80a937c8-4873-4096-9e1f-e4a7cb14acc5"
+        name="Setup Filters"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="8d0884fb-833d-4c23-9f63-96b2485ed678"
+            LastKnownName="Batch Setup"
+            LastKnownLocation="Models.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b012f255-0b4c-4547-987b-cd8aa44d24b0"
+        name="Control Execution"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="d3479b47-a587-4b4e-99ae-a79c7dd79f97"
+            LastKnownName="Batch Filter Execution"
+            LastKnownLocation="Models.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d387e260-25eb-4cd5-9af6-531412288307"
+        name="Collect Results and Measures"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="50b0f6ad-8644-477a-9f27-c05caf4d6fd7"
+            isDerived="false"
+            sourceEndRoleName="Collect Results and Measures"
+            targetEndRoleName="User"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="3a7fb81c-1319-402a-8352-a87e46d24cf9"
+              LastKnownName="User"
+              LastKnownLocation="Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c15a30c8-a4d4-45e1-a203-161ed672271c"
+                  name="Collect Results and Measures"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="891bb006-aac2-4cb0-9555-e770b7eb92c3"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="d3479b47-a587-4b4e-99ae-a79c7dd79f97"
+            LastKnownName="Batch Filter Execution"
+            LastKnownLocation="Models.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="8d0884fb-833d-4c23-9f63-96b2485ed678"
+        name="Batch Setup"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="16022894-a780-45b4-9f16-78dfd159ebb3"
+        name="Load / Save"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="8d0884fb-833d-4c23-9f63-96b2485ed678"
+            LastKnownName="Batch Setup"
+            LastKnownLocation="Models.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cbaee27e-e1ce-4562-9a11-b1e6e94db21a"
+        name="Choose Image"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9c86a6f2-187c-4a1d-9b82-dc25733975d1"
+        name="Return New Image"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="af0feba9-1cfd-467a-90c6-5786370ff7c3"
+            isDerived="false"
+            sourceEndRoleName="Return New mage"
+            targetEndRoleName="User"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="3a7fb81c-1319-402a-8352-a87e46d24cf9"
+              LastKnownName="User"
+              LastKnownLocation="Models.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9245354c-43ad-4b02-b2c5-5ec7a36e342e"
+                  name="Return New mage"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="74fa2715-473f-4e51-8a8a-a976686158a7"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="7650a685-e988-46c5-9e7e-cef31ac88848"
+            LastKnownName="Filter Setup and Execution"
+            LastKnownLocation="Models.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a69bfd82-9ec8-4c46-8d4b-8c2d228db65d"
+        name="Class1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8369baf1-ea0d-4d3a-9f4c-3cac00805bd2"
+        name="Setup AutoSave"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="8d0884fb-833d-4c23-9f63-96b2485ed678"
+            LastKnownName="Batch Setup"
+            LastKnownLocation="Models.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

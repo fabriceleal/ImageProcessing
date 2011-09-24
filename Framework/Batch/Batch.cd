@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Framework.Batch.Node">
+    <Position X="0.5" Y="0.5" Width="3" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="Framework.Batch.Node.FilterExecutedDelegate">
+        <TypeIdentifier>
+          <NewMemberFileName>Batch\Node.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Framework.Batch.Node.FilterMeasuredDelegate">
+        <TypeIdentifier>
+          <NewMemberFileName>Batch\Node.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAQAKAAQgABAEQAAQAAAAAAAAABAEAAAAAJQ=</HashCode>
+      <FileName>Batch\Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Batch.NodeFilter">
+    <Position X="4.25" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAEAAAAAAAAAAAAAAEAAAAABA=</HashCode>
+      <FileName>Batch\NodeFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Batch.Graph">
+    <Position X="8" Y="0.5" Width="3" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="Framework.Batch.Graph.FilterExecutedDelegate">
+        <TypeIdentifier>
+          <NewMemberFileName>Batch\Graph.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Framework.Batch.Graph.FilterMeasuredDelegate">
+        <TypeIdentifier>
+          <NewMemberFileName>Batch\Graph.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIQAYAAQgABAAEAAAAAAAAAAAABgAAAAAABA=</HashCode>
+      <FileName>Batch\Graph.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Framework.Batch.BatchFilter">
+    <Position X="11.75" Y="0.5" Width="3" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="Framework.Batch.BatchFilter.FilterExecutedDelegate">
+        <TypeIdentifier>
+          <NewMemberFileName>Batch\BatchFilter.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Framework.Batch.BatchFilter.FilterMeasuredDelegate">
+        <TypeIdentifier>
+          <NewMemberFileName>Batch\BatchFilter.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Framework.Batch.BatchFilter.BatchFinishedDelegate">
+        <TypeIdentifier>
+          <NewMemberFileName>Batch\BatchFilter.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ABAggIAAASAIQCQgAAAAAAAAAwQAAAACIBAAEAAAABA=</HashCode>
+      <FileName>Batch\BatchFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
